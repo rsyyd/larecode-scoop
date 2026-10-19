@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "description": "Provider-neutral AI coding agent for the terminal",
+  "homepage": "https://github.com/rsyyd/larecode",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/rsyyd/larecode/releases/download/v0.1.0/larecode-windows-x64.exe",
+      "hash": "88735266322385e638a7ab0a20b9652edd87e4de518af0204e5cb3d8a0060790"
+    }
+  },
+  "bin": [
+    [
+      "larecode-windows-x64.exe",
+      "larecode"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/rsyyd/larecode"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/rsyyd/larecode/releases/download/v$version/larecode-windows-x64.exe"
+      }
+    }
+  }
+}
